@@ -22,7 +22,7 @@ Here I list the main data that are used in the R code.
 
 ## Output tidy data
 The txt file "mean_data.txt" is the output file as required by the project. The data could be loaded by command:
-> mean_data<-read.table("mean_data.txt")
+> tmp<-read.table("mean_data.txt",header=TRUE)
 
 The first two columns are the subjects and the activity labels, followed by the mean of each variable. The subject, activity label and variable are all described in the column names. 
 
