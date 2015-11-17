@@ -35,5 +35,3 @@ onedata_meansd$Activity<-activitylabels[onedata_meansd$Activity,2]
 # 6. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
 mean_data <- ddply(onedata_meansd, .(Subject, Activity), function(x) colMeans(x[, 3:ncol(onedata_meansd)]))
 write.table(mean_data, "mean_data.txt", row.name=TRUE)
-
-tmp<-read.table("mean_data.txt")
